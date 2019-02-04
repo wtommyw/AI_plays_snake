@@ -17,7 +17,7 @@ python3 -m pip -r requirements.txt
 ├── Arena.py            # class that helps in setting the boundary and parameters of the arena
 ├── brain.py            # class that deals with the neural network
 ├── colors.py           # consists of colors used in the whole project
-├── game.py             # lets the saved snakes to run in
+├── game.py             # lets the saved snakes to run in 
 ├── samples
 │   ├── generation23.gif    
 │   └── generation6.gif
@@ -31,17 +31,12 @@ python3 -m pip -r requirements.txt
 ## Training
 To train the neural network using Genetic Algorithm, alter the parameters according to your needs inside the ```input.py```, then run the following command specifying the path to save the optimised result as a pickle file (a list is stored, containing the best snake from each generation):
 ```
-python3 Genetic_algo.py --output saved/test.pickle
+python3 Genetic_algo.py --output saved/test.pickle 
 ```
 ## Playing
 To run or test the snakes saved previously, run the following commands specifying the path to the saved file :
 ```
 python3 game.py --input saved/test.pickle
-```
-
-To run from a generation (e.g. generation 20 and up) add the ```--start``` command :
-```
-python3 game.py --input saved/test.pickle --start 20
 ```
 ## Acknowledgement
 - Inspired by the video of Code-Bullet. Link : https://www.youtube.com/watch?v=3bhP7zulFfY
